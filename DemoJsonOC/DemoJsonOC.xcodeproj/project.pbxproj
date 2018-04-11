@@ -14,6 +14,8 @@
 		ECDF965A207E10A00054FB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDF9658207E10A00054FB0A /* LaunchScreen.storyboard */; };
 		ECDF965D207E10A00054FB0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF965C207E10A00054FB0A /* main.m */; };
 		ECDF9667207E10A00054FB0A /* DemoJsonOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF9666207E10A00054FB0A /* DemoJsonOCTests.m */; };
+		ECDF9672207E18330054FB0A /* document.json in Resources */ = {isa = PBXBuildFile; fileRef = ECDF9671207E18330054FB0A /* document.json */; };
+		ECDF9677207E22850054FB0A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF9676207E22850054FB0A /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		ECDF9662207E10A00054FB0A /* DemoJsonOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoJsonOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDF9666207E10A00054FB0A /* DemoJsonOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoJsonOCTests.m; sourceTree = "<group>"; };
 		ECDF9668207E10A00054FB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECDF9671207E18330054FB0A /* document.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = document.json; path = ../../document.json; sourceTree = "<group>"; };
+		ECDF9675207E22850054FB0A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		ECDF9676207E22850054FB0A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 				ECDF964C207E10A00054FB0A /* DemoJsonOC */,
 				ECDF9665207E10A00054FB0A /* DemoJsonOCTests */,
 				ECDF964B207E10A00054FB0A /* Products */,
+				ECDF9671207E18330054FB0A /* document.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +96,8 @@
 				ECDF9658207E10A00054FB0A /* LaunchScreen.storyboard */,
 				ECDF965B207E10A00054FB0A /* Info.plist */,
 				ECDF965C207E10A00054FB0A /* main.m */,
+				ECDF9675207E22850054FB0A /* User.h */,
+				ECDF9676207E22850054FB0A /* User.m */,
 			);
 			path = DemoJsonOC;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDF9672207E18330054FB0A /* document.json in Resources */,
 				ECDF965A207E10A00054FB0A /* LaunchScreen.storyboard in Resources */,
 				ECDF9657207E10A00054FB0A /* Assets.xcassets in Resources */,
 				ECDF9655207E10A00054FB0A /* Main.storyboard in Resources */,
@@ -205,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDF9677207E22850054FB0A /* User.m in Sources */,
 				ECDF9652207E10A00054FB0A /* ViewController.m in Sources */,
 				ECDF965D207E10A00054FB0A /* main.m in Sources */,
 				ECDF964F207E10A00054FB0A /* AppDelegate.m in Sources */,

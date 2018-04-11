@@ -1,0 +1,9 @@
+{
+  "user" : {
+    "name" : "Thinh",
+    "address" : "hcm",
+    "age" : 21,
+    "year" : 1996,
+    "sex" : true
+  }
+}
