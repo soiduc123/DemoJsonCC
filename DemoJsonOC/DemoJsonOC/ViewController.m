@@ -41,7 +41,6 @@
     NSDictionary *json = json1[@"user"];
     User *user = [[User alloc] init];
     user.name = [json objectForKey:@"name"];
-    [_labelName setText: user.name];
     user.address = [json objectForKey:@"address"];
     user.year = [[json objectForKey:@"year"] integerValue];
     user.age = [[json objectForKey:@"age"] integerValue];
