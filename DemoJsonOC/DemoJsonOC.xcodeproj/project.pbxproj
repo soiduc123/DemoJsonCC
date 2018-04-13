@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7099D0622080869E00C73288 /* APIHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7099D0612080869E00C73288 /* APIHandler.m */; };
+		7099D0652080988D00C73288 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7099D0642080988D00C73288 /* Weather.m */; };
 		ECDF964F207E10A00054FB0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF964E207E10A00054FB0A /* AppDelegate.m */; };
 		ECDF9652207E10A00054FB0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF9651207E10A00054FB0A /* ViewController.m */; };
 		ECDF9655207E10A00054FB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDF9653207E10A00054FB0A /* Main.storyboard */; };
@@ -29,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7099D0602080869E00C73288 /* APIHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIHandler.h; sourceTree = "<group>"; };
+		7099D0612080869E00C73288 /* APIHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIHandler.m; sourceTree = "<group>"; };
+		7099D0632080988D00C73288 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		7099D0642080988D00C73288 /* Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		ECDF964A207E10A00054FB0A /* DemoJsonOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoJsonOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDF964D207E10A00054FB0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECDF964E207E10A00054FB0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +71,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7099D0592080510900C73288 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECDF9650207E10A00054FB0A /* ViewController.h */,
+				ECDF9651207E10A00054FB0A /* ViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7099D05A2080511E00C73288 /* modal */ = {
+			isa = PBXGroup;
+			children = (
+				ECDF9676207E22850054FB0A /* User.m */,
+				ECDF9675207E22850054FB0A /* User.h */,
+				7099D0632080988D00C73288 /* Weather.h */,
+				7099D0642080988D00C73288 /* Weather.m */,
+			);
+			path = modal;
+			sourceTree = "<group>";
+		};
+		7099D05B208052A800C73288 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7099D0602080869E00C73288 /* APIHandler.h */,
+				7099D0612080869E00C73288 /* APIHandler.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7099D05F2080867700C73288 /* ultilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ultilities;
+			sourceTree = "<group>";
+		};
 		ECDF9641207E10A00054FB0A = {
 			isa = PBXGroup;
 			children = (
@@ -87,17 +129,17 @@
 		ECDF964C207E10A00054FB0A /* DemoJsonOC */ = {
 			isa = PBXGroup;
 			children = (
-				ECDF964D207E10A00054FB0A /* AppDelegate.h */,
+				7099D05F2080867700C73288 /* ultilities */,
+				7099D05B208052A800C73288 /* API */,
+				7099D05A2080511E00C73288 /* modal */,
+				7099D0592080510900C73288 /* controller */,
 				ECDF964E207E10A00054FB0A /* AppDelegate.m */,
-				ECDF9650207E10A00054FB0A /* ViewController.h */,
-				ECDF9651207E10A00054FB0A /* ViewController.m */,
+				ECDF964D207E10A00054FB0A /* AppDelegate.h */,
 				ECDF9653207E10A00054FB0A /* Main.storyboard */,
 				ECDF9656207E10A00054FB0A /* Assets.xcassets */,
 				ECDF9658207E10A00054FB0A /* LaunchScreen.storyboard */,
 				ECDF965B207E10A00054FB0A /* Info.plist */,
 				ECDF965C207E10A00054FB0A /* main.m */,
-				ECDF9675207E22850054FB0A /* User.h */,
-				ECDF9676207E22850054FB0A /* User.m */,
 			);
 			path = DemoJsonOC;
 			sourceTree = "<group>";
@@ -155,7 +197,7 @@
 		ECDF9642207E10A00054FB0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Uyen Cao";
 				TargetAttributes = {
 					ECDF9649207E10A00054FB0A = {
@@ -214,7 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7099D0652080988D00C73288 /* Weather.m in Sources */,
 				ECDF9677207E22850054FB0A /* User.m in Sources */,
+				7099D0622080869E00C73288 /* APIHandler.m in Sources */,
 				ECDF9652207E10A00054FB0A /* ViewController.m in Sources */,
 				ECDF965D207E10A00054FB0A /* main.m in Sources */,
 				ECDF964F207E10A00054FB0A /* AppDelegate.m in Sources */,
@@ -273,6 +317,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -280,6 +325,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -328,6 +374,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -335,6 +382,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
