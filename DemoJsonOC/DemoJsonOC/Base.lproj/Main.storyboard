@@ -58,9 +58,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gKI-ha-LGc">
+                                <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gKI-ha-LGc" secondAttribute="trailing" id="2is-9K-F5i"/>
                             <constraint firstItem="Iqn-Qe-fuV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5Ci-Mh-pgb"/>
                             <constraint firstItem="oHx-CW-crj" firstAttribute="top" secondItem="M3h-D3-8XW" secondAttribute="bottom" constant="30" id="5IN-3c-cxB"/>
                             <constraint firstItem="M3h-D3-8XW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="A7i-9o-xhz"/>
@@ -71,9 +75,13 @@
                             <constraint firstItem="Iqn-Qe-fuV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.95" id="TuV-E4-g43"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AnL-7m-abY" secondAttribute="trailing" constant="10" id="VoL-vg-0dp"/>
                             <constraint firstItem="Iqn-Qe-fuV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="Zom-Fi-um9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gKI-ha-LGc" secondAttribute="bottom" id="aja-d4-Pec"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="was-uJ-YtB" secondAttribute="trailing" constant="10" id="bWM-4q-UUJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yyj-dA-ciy" secondAttribute="trailing" constant="10" id="beS-CO-Y6h"/>
                             <constraint firstItem="yyj-dA-ciy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cyQ-hz-Ai5"/>
+                            <constraint firstItem="gKI-ha-LGc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d84-Kb-Qjn"/>
+                            <constraint firstItem="gKI-ha-LGc" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="lPT-9k-N3z"/>
+                            <constraint firstItem="gKI-ha-LGc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n8J-Ws-P5t"/>
                             <constraint firstItem="yyj-dA-ciy" firstAttribute="top" secondItem="oHx-CW-crj" secondAttribute="bottom" constant="30" id="o7t-Kl-Uza"/>
                             <constraint firstItem="Iqn-Qe-fuV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rXQ-bF-FQy"/>
                             <constraint firstItem="M3h-D3-8XW" firstAttribute="top" secondItem="Iqn-Qe-fuV" secondAttribute="bottom" constant="30" id="saY-0N-TFi"/>
@@ -84,6 +92,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="imgBackGround" destination="gKI-ha-LGc" id="a81-Qf-Gwv"/>
                         <outlet property="lblClouds" destination="was-uJ-YtB" id="pUM-u0-rvk"/>
                         <outlet property="lblHumidity" destination="M3h-D3-8XW" id="kRa-6X-2OY"/>
                         <outlet property="lblPressure" destination="yyj-dA-ciy" id="45d-fV-sAp"/>

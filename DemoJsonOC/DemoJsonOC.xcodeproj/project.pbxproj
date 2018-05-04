@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7099D0622080869E00C73288 /* APIHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7099D0612080869E00C73288 /* APIHandler.m */; };
-		7099D0652080988D00C73288 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 7099D0642080988D00C73288 /* Weather.m */; };
+		7019B8482091719000CF1608 /* WTCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7019B8472091719000CF1608 /* WTCoordinateModel.m */; };
+		7019B84B209174ED00CF1608 /* WTWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7019B84A209174ED00CF1608 /* WTWeatherModel.m */; };
+		7019B84E209176D200CF1608 /* WTWindModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7019B84D209176D200CF1608 /* WTWindModel.m */; };
+		7019B8512091775300CF1608 /* WTClouds.m in Sources */ = {isa = PBXBuildFile; fileRef = 7019B8502091775300CF1608 /* WTClouds.m */; };
+		7019B854209177E500CF1608 /* WTSysModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7019B853209177E500CF1608 /* WTSysModel.m */; };
+		7019B8602091C70A00CF1608 /* WTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7019B85F2091C70A00CF1608 /* WTError.m */; };
+		70E2A738208F2BC1009EE439 /* WTResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E2A737208F2BC1009EE439 /* WTResponseModel.m */; };
+		70E2A73C208F2CED009EE439 /* WTMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E2A73B208F2CED009EE439 /* WTMainModel.m */; };
+		70E2A73F208F308D009EE439 /* WClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E2A73E208F308D009EE439 /* WClient.m */; };
+		9649B4C8E4E3B6602E24A42F /* libPods-DemoJsonOCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AA740C57AB2EFB97CBA3FE /* libPods-DemoJsonOCTests.a */; };
+		EB72B4AE6152C1FEED4CFD58 /* libPods-DemoJsonOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 193C72692990571A023F433F /* libPods-DemoJsonOC.a */; };
 		ECDF964F207E10A00054FB0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF964E207E10A00054FB0A /* AppDelegate.m */; };
 		ECDF9652207E10A00054FB0A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF9651207E10A00054FB0A /* ViewController.m */; };
 		ECDF9655207E10A00054FB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDF9653207E10A00054FB0A /* Main.storyboard */; };
@@ -17,7 +26,6 @@
 		ECDF965D207E10A00054FB0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF965C207E10A00054FB0A /* main.m */; };
 		ECDF9667207E10A00054FB0A /* DemoJsonOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF9666207E10A00054FB0A /* DemoJsonOCTests.m */; };
 		ECDF9672207E18330054FB0A /* document.json in Resources */ = {isa = PBXBuildFile; fileRef = ECDF9671207E18330054FB0A /* document.json */; };
-		ECDF9677207E22850054FB0A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDF9676207E22850054FB0A /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +39,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7099D0602080869E00C73288 /* APIHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIHandler.h; sourceTree = "<group>"; };
-		7099D0612080869E00C73288 /* APIHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIHandler.m; sourceTree = "<group>"; };
-		7099D0632080988D00C73288 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
-		7099D0642080988D00C73288 /* Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		13E1A22729CDF9B6878C04E3 /* Pods-DemoJsonOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJsonOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJsonOC/Pods-DemoJsonOC.release.xcconfig"; sourceTree = "<group>"; };
+		193C72692990571A023F433F /* libPods-DemoJsonOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoJsonOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		250484298C8561A83237616A /* Pods-DemoJsonOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJsonOCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJsonOCTests/Pods-DemoJsonOCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6560D43FC0CCD9B850A0448D /* Pods-DemoJsonOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJsonOCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJsonOCTests/Pods-DemoJsonOCTests.release.xcconfig"; sourceTree = "<group>"; };
+		7019B8462091719000CF1608 /* WTCoordinateModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCoordinateModel.h; sourceTree = "<group>"; };
+		7019B8472091719000CF1608 /* WTCoordinateModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCoordinateModel.m; sourceTree = "<group>"; };
+		7019B849209174ED00CF1608 /* WTWeatherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTWeatherModel.h; sourceTree = "<group>"; };
+		7019B84A209174ED00CF1608 /* WTWeatherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTWeatherModel.m; sourceTree = "<group>"; };
+		7019B84C209176D200CF1608 /* WTWindModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTWindModel.h; sourceTree = "<group>"; };
+		7019B84D209176D200CF1608 /* WTWindModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTWindModel.m; sourceTree = "<group>"; };
+		7019B84F2091775300CF1608 /* WTClouds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTClouds.h; sourceTree = "<group>"; };
+		7019B8502091775300CF1608 /* WTClouds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTClouds.m; sourceTree = "<group>"; };
+		7019B852209177E500CF1608 /* WTSysModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTSysModel.h; sourceTree = "<group>"; };
+		7019B853209177E500CF1608 /* WTSysModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTSysModel.m; sourceTree = "<group>"; };
+		7019B85E2091C70A00CF1608 /* WTError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTError.h; sourceTree = "<group>"; };
+		7019B85F2091C70A00CF1608 /* WTError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTError.m; sourceTree = "<group>"; };
+		70E2A736208F2BC1009EE439 /* WTResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTResponseModel.h; sourceTree = "<group>"; };
+		70E2A737208F2BC1009EE439 /* WTResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTResponseModel.m; sourceTree = "<group>"; };
+		70E2A73A208F2CED009EE439 /* WTMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMainModel.h; sourceTree = "<group>"; };
+		70E2A73B208F2CED009EE439 /* WTMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMainModel.m; sourceTree = "<group>"; };
+		70E2A73D208F308D009EE439 /* WClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WClient.h; sourceTree = "<group>"; };
+		70E2A73E208F308D009EE439 /* WClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WClient.m; sourceTree = "<group>"; };
+		90B2F1C8F56453F2C44ACEB7 /* Pods-DemoJsonOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoJsonOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoJsonOC/Pods-DemoJsonOC.debug.xcconfig"; sourceTree = "<group>"; };
+		C4AA740C57AB2EFB97CBA3FE /* libPods-DemoJsonOCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoJsonOCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDF964A207E10A00054FB0A /* DemoJsonOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoJsonOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDF964D207E10A00054FB0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECDF964E207E10A00054FB0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,8 +77,6 @@
 		ECDF9666207E10A00054FB0A /* DemoJsonOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoJsonOCTests.m; sourceTree = "<group>"; };
 		ECDF9668207E10A00054FB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECDF9671207E18330054FB0A /* document.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = document.json; path = ../../document.json; sourceTree = "<group>"; };
-		ECDF9675207E22850054FB0A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		ECDF9676207E22850054FB0A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB72B4AE6152C1FEED4CFD58 /* libPods-DemoJsonOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +92,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9649B4C8E4E3B6602E24A42F /* libPods-DemoJsonOCTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18DE024801B043B39EDD2968 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90B2F1C8F56453F2C44ACEB7 /* Pods-DemoJsonOC.debug.xcconfig */,
+				13E1A22729CDF9B6878C04E3 /* Pods-DemoJsonOC.release.xcconfig */,
+				250484298C8561A83237616A /* Pods-DemoJsonOCTests.debug.xcconfig */,
+				6560D43FC0CCD9B850A0448D /* Pods-DemoJsonOCTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		34CC3200B5F4A024491A6C66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				193C72692990571A023F433F /* libPods-DemoJsonOC.a */,
+				C4AA740C57AB2EFB97CBA3FE /* libPods-DemoJsonOCTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7019B8612091C76300CF1608 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				7019B85F2091C70A00CF1608 /* WTError.m */,
+				7019B85E2091C70A00CF1608 /* WTError.h */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		7099D0592080510900C73288 /* controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,22 +137,20 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		7099D05A2080511E00C73288 /* modal */ = {
+		7099D05A2080511E00C73288 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				ECDF9676207E22850054FB0A /* User.m */,
-				ECDF9675207E22850054FB0A /* User.h */,
-				7099D0632080988D00C73288 /* Weather.h */,
-				7099D0642080988D00C73288 /* Weather.m */,
+				7019B8612091C76300CF1608 /* Error */,
+				70E2A735208F2B9F009EE439 /* WTResponse */,
 			);
-			path = modal;
+			path = models;
 			sourceTree = "<group>";
 		};
 		7099D05B208052A800C73288 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				7099D0602080869E00C73288 /* APIHandler.h */,
-				7099D0612080869E00C73288 /* APIHandler.m */,
+				70E2A73D208F308D009EE439 /* WClient.h */,
+				70E2A73E208F308D009EE439 /* WClient.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -107,6 +162,27 @@
 			path = ultilities;
 			sourceTree = "<group>";
 		};
+		70E2A735208F2B9F009EE439 /* WTResponse */ = {
+			isa = PBXGroup;
+			children = (
+				70E2A736208F2BC1009EE439 /* WTResponseModel.h */,
+				70E2A737208F2BC1009EE439 /* WTResponseModel.m */,
+				70E2A73A208F2CED009EE439 /* WTMainModel.h */,
+				70E2A73B208F2CED009EE439 /* WTMainModel.m */,
+				7019B8462091719000CF1608 /* WTCoordinateModel.h */,
+				7019B8472091719000CF1608 /* WTCoordinateModel.m */,
+				7019B849209174ED00CF1608 /* WTWeatherModel.h */,
+				7019B84A209174ED00CF1608 /* WTWeatherModel.m */,
+				7019B84C209176D200CF1608 /* WTWindModel.h */,
+				7019B84D209176D200CF1608 /* WTWindModel.m */,
+				7019B84F2091775300CF1608 /* WTClouds.h */,
+				7019B8502091775300CF1608 /* WTClouds.m */,
+				7019B852209177E500CF1608 /* WTSysModel.h */,
+				7019B853209177E500CF1608 /* WTSysModel.m */,
+			);
+			path = WTResponse;
+			sourceTree = "<group>";
+		};
 		ECDF9641207E10A00054FB0A = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +190,8 @@
 				ECDF9665207E10A00054FB0A /* DemoJsonOCTests */,
 				ECDF964B207E10A00054FB0A /* Products */,
 				ECDF9671207E18330054FB0A /* document.json */,
+				18DE024801B043B39EDD2968 /* Pods */,
+				34CC3200B5F4A024491A6C66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,7 +209,7 @@
 			children = (
 				7099D05F2080867700C73288 /* ultilities */,
 				7099D05B208052A800C73288 /* API */,
-				7099D05A2080511E00C73288 /* modal */,
+				7099D05A2080511E00C73288 /* models */,
 				7099D0592080510900C73288 /* controller */,
 				ECDF964E207E10A00054FB0A /* AppDelegate.m */,
 				ECDF964D207E10A00054FB0A /* AppDelegate.h */,
@@ -160,9 +238,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECDF966B207E10A00054FB0A /* Build configuration list for PBXNativeTarget "DemoJsonOC" */;
 			buildPhases = (
+				F6DF57E92F94346D4FDF793D /* [CP] Check Pods Manifest.lock */,
 				ECDF9646207E10A00054FB0A /* Sources */,
 				ECDF9647207E10A00054FB0A /* Frameworks */,
 				ECDF9648207E10A00054FB0A /* Resources */,
+				5ABAA398AFFD0532AB40F09E /* [CP] Embed Pods Frameworks */,
+				23E96991DE3CCD5C7677A081 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECDF966E207E10A00054FB0A /* Build configuration list for PBXNativeTarget "DemoJsonOCTests" */;
 			buildPhases = (
+				AEB2DF329B6C0DDBAC60C224 /* [CP] Check Pods Manifest.lock */,
 				ECDF965E207E10A00054FB0A /* Sources */,
 				ECDF965F207E10A00054FB0A /* Frameworks */,
 				ECDF9660207E10A00054FB0A /* Resources */,
+				4109BA016C35E8FCFC5E4BF5 /* [CP] Embed Pods Frameworks */,
+				64B432F9B7D07F5E79EA2839 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +286,7 @@
 				TargetAttributes = {
 					ECDF9649207E10A00054FB0A = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					ECDF9661207E10A00054FB0A = {
@@ -251,16 +336,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23E96991DE3CCD5C7677A081 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DemoJsonOC/Pods-DemoJsonOC-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-3D-Secure-Localization.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-UI-Localization.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Braintree/Braintree-Drop-In-Localization.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Braintree-3D-Secure-Localization.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Braintree-UI-Localization.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Braintree-Drop-In-Localization.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoJsonOC/Pods-DemoJsonOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4109BA016C35E8FCFC5E4BF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoJsonOCTests/Pods-DemoJsonOCTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ABAA398AFFD0532AB40F09E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoJsonOC/Pods-DemoJsonOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64B432F9B7D07F5E79EA2839 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoJsonOCTests/Pods-DemoJsonOCTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB2DF329B6C0DDBAC60C224 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoJsonOCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DF57E92F94346D4FDF793D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoJsonOC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECDF9646207E10A00054FB0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7099D0652080988D00C73288 /* Weather.m in Sources */,
-				ECDF9677207E22850054FB0A /* User.m in Sources */,
-				7099D0622080869E00C73288 /* APIHandler.m in Sources */,
+				7019B84B209174ED00CF1608 /* WTWeatherModel.m in Sources */,
+				70E2A73C208F2CED009EE439 /* WTMainModel.m in Sources */,
+				7019B8512091775300CF1608 /* WTClouds.m in Sources */,
+				7019B8602091C70A00CF1608 /* WTError.m in Sources */,
 				ECDF9652207E10A00054FB0A /* ViewController.m in Sources */,
+				70E2A73F208F308D009EE439 /* WClient.m in Sources */,
+				70E2A738208F2BC1009EE439 /* WTResponseModel.m in Sources */,
+				7019B854209177E500CF1608 /* WTSysModel.m in Sources */,
 				ECDF965D207E10A00054FB0A /* main.m in Sources */,
+				7019B84E209176D200CF1608 /* WTWindModel.m in Sources */,
+				7019B8482091719000CF1608 /* WTCoordinateModel.m in Sources */,
 				ECDF964F207E10A00054FB0A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -413,32 +610,40 @@
 		};
 		ECDF966C207E10A00054FB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90B2F1C8F56453F2C44ACEB7 /* Pods-DemoJsonOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoJsonOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.DemoJsonOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		ECDF966D207E10A00054FB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E1A22729CDF9B6878C04E3 /* Pods-DemoJsonOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoJsonOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.DemoJsonOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		ECDF966F207E10A00054FB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 250484298C8561A83237616A /* Pods-DemoJsonOCTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +658,7 @@
 		};
 		ECDF9670207E10A00054FB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6560D43FC0CCD9B850A0448D /* Pods-DemoJsonOCTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
